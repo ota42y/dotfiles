@@ -7,18 +7,11 @@ fi
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# homebrewで入れたものを優先して使うようにする
+export PATH=/usr/local/bin:$PATH
+
 # http://qiita.com/yaotti/items/157ff0a46736ec793a91
 setopt AUTO_CD
-
-case "`uname`" in
-	Darwin) # OSがMacならば
-		if [ -d /Applications/MacVim.app ]; then # MacVimが存在するならば
-			alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-			alias vi='vim'
-		fi
-		;;	
-	*) ;; # OSがMac以外ならば何もしない
-esac
 
 alias rm='rm -i'
 
@@ -229,15 +222,7 @@ function _update_vcs_info_msg() {
 }
 add-zsh-hook precmd _update_vcs_info_msg
 
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-
 # hub用
 # brew install hub
 
 function git(){hub "$@"} # zsh
-
-
-
-
