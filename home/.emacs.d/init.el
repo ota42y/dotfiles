@@ -6,7 +6,7 @@
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
       (normal-top-level-add-subdirs-to-load-path)))
 
-(when (>= emacs-major-version 24)                                                                                                                                                     
+(when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -47,7 +47,7 @@
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/conf")
-(init-loader-load "~/aa_files/Dropbox/data/tools/emacs")
+(init-loader-load "~/aa_files/Dropbox/archive/tools/emacs")
 
 ; 何故かここじゃないとうまく認識されない…
 (setq browse-url-browser-function 'browse-url-generic)
