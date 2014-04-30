@@ -4,6 +4,13 @@ if [ -d ${HOME}/.rbenv  ] ; then
 	eval "$(rbenv init - zsh)"
 fi
 
+# nvmの設定
+# git clone git://github.com/creationix/nvm.git ~/.nvm
+if [ -d ${HOME}/.nvm/ ]
+then
+    source ${HOME}/.nvm/nvm.sh
+fi
+
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
