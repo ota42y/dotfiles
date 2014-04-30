@@ -24,7 +24,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 #export WORKON_HOME=$HOME/.virtualenvs
 #source `which virtualenvwrapper.sh`
 
-
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
 autoload -U compinit
@@ -226,3 +225,7 @@ add-zsh-hook precmd _update_vcs_info_msg
 # brew install hub
 
 function git(){hub "$@"} # zsh
+
+
+# http://qiita.com/Linda_pp/items/cb047fb1fe279f9d0b22
+source ~/.zsh.d/zsh-bundle-exec/zsh-bundle-exec.zsh

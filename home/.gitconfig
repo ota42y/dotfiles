@@ -2,10 +2,10 @@
 	templatedir = ~/.git_template
 
 [include]
-	path = .gitconfig.local
+	path = $HOME/.gitconfig.local
 
 [core]
-	excludesfile = $HOME/.gitignore
+	excludesfile = $HOME/.gitignore_global
 
 [color]
   # colorの設定(以下のコマンドは自動で色つける)
@@ -170,3 +170,6 @@
 
 [credential]
 	helper = osxkeychain
+[user]
+	name = ota42y
+	email = ota42y@gmail.com
