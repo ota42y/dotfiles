@@ -11,6 +11,9 @@ then
     source ${HOME}/.nvm/nvm.sh
 fi
 
+export GOPATH=$HOME/.gocode
+export PATH=$PATH:$GOPATH/bin
+
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
