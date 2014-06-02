@@ -42,7 +42,7 @@ compinit -u
 
 export NDK_ROOT="$HOME/aa_files/bin/android/ndk"
 export ANDROID_SDK_ROOT="$HOME/aa_files/bin/android/adt/sdk"
-export V_TARGET_ID=1
+export V_TARGET_ID=3
 export ANDROID_SDK_PLATFORM_TOOLS="$HOME/aa_files/bin/android/adt/sdk/platform-tools"
 
 export PATH=$PATH:$ANDROID_SDK_PLATFORM_TOOLS:$NDK_ROOT
@@ -236,6 +236,10 @@ add-zsh-hook precmd _update_vcs_info_msg
 
 function git(){hub "$@"} # zsh
 
+# git contrib
+export PATH=/usr/local/share/git-core/contrib/:$PATH
+# git-new-workdir
+export PATH=/usr/local/share/git-core/contrib/workdir/:$PATH
 
 # http://qiita.com/Linda_pp/items/cb047fb1fe279f9d0b22
 source ~/.zsh.d/zsh-bundle-exec/zsh-bundle-exec.zsh
