@@ -11,6 +11,9 @@ then
     source ${HOME}/.nvm/nvm.sh
 fi
 
+#ailas
+alias g='git'
+
 export GOPATH=$HOME/.gocode
 export PATH=$PATH:$GOPATH/bin
 
