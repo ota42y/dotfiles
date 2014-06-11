@@ -1,41 +1,13 @@
-# rbenv
-if [ -d ${HOME}/.rbenv  ] ; then
-	export PATH="${HOME}/.rbenv/bin:${HOME}/.rbenv/shims:${PATH}"
-	eval "$(rbenv init - zsh)"
-fi
-
-# nvmの設定
-# git clone git://github.com/creationix/nvm.git ~/.nvm
-if [ -d ${HOME}/.nvm/ ]
-then
-    source ${HOME}/.nvm/nvm.sh
-fi
+source ~/.zsh.d/conf/.zshrc_path
 
 #ailas
 alias g='git'
 
-export GOPATH=$HOME/.gocode
-export PATH=$PATH:$GOPATH/bin
-
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-# homebrewで入れたものを優先して使うようにする
-export PATH=/usr/local/bin:$PATH
 
 # http://qiita.com/yaotti/items/157ff0a46736ec793a91
 setopt AUTO_CD
 
 alias rm='rm -i'
-
-# MySQL
-export PATH=$PATH:/usr/local/mysql/bin
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-#pythonz
-#export WORKON_HOME=$HOME/.virtualenvs
-#source `which virtualenvwrapper.sh`
 
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
