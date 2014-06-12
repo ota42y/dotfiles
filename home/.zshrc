@@ -1,8 +1,8 @@
 source ~/.zsh.d/conf/.zshrc_path
+source ~/.zshrc_local
 
 #ailas
 alias g='git'
-
 
 # http://qiita.com/yaotti/items/157ff0a46736ec793a91
 setopt AUTO_CD
@@ -14,7 +14,6 @@ fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 autoload -U compinit
 compinit -u
 
-
 # history
 # http://0xcc.net/unimag/3/
 HISTFILE=$HOME/.zsh-history           # 履歴をファイルに保存する
@@ -22,13 +21,6 @@ HISTSIZE=100000                       # メモリ内の履歴の数
 SAVEHIST=100000                       # 保存される履歴の数
 setopt extended_history               # 履歴ファイルに時刻を記録
 function history-all { history -E 1 } # 全履歴の一覧を出力する
-
-export NDK_ROOT="$HOME/aa_files/bin/android/ndk"
-export ANDROID_SDK_ROOT="$HOME/aa_files/bin/android/adt/sdk"
-export V_TARGET_ID=3
-export ANDROID_SDK_PLATFORM_TOOLS="$HOME/aa_files/bin/android/adt/sdk/platform-tools"
-
-export PATH=$PATH:$ANDROID_SDK_PLATFORM_TOOLS:$NDK_ROOT
 
 PROMPT='@%m:%(5~,%-2~/.../%2~,%~)%# '
 
