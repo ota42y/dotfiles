@@ -1,13 +1,10 @@
 source ~/.zsh.d/conf/.zshrc_path
-source ~/.zshrc_local
+source ~/.zsh.d/conf/.zshrc_alias
 
-#ailas
-alias g='git'
+source ~/.zshrc_local
 
 # http://qiita.com/yaotti/items/157ff0a46736ec793a91
 setopt AUTO_CD
-
-alias rm='rm -i'
 
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
