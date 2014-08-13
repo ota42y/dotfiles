@@ -7,4 +7,5 @@ home/.emacs.d/elpa
 home/.emacs.d/el-get
 home/.emacs.d/url
 init-loader.el
-
+**/.bundle
+**/vender/bundle
