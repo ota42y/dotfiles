@@ -23,7 +23,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -33,6 +33,8 @@
   st  = status
   ss  = status -s
   sh  = show
+
+	n  = now --all --stat
 
 	# Git でマージ済みのブランチを一括削除する
 	# http://qiita.com/kyanny/items/10a57a4f1d2806e3a3b8
