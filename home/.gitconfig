@@ -40,6 +40,10 @@
 	# http://qiita.com/kyanny/items/10a57a4f1d2806e3a3b8
 	brdel = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 
+	# 普通のpatchコマンドで取り込めるdiffファイルをgitで作成する
+	# http://d.hatena.ne.jp/kanonji/20110222/1298341934
+	mkpatch = diff --no-prefix
+
   so  = remote show origin
   # pull/push/fetch
   ft  = fetch
