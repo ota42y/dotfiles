@@ -27,6 +27,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+  # "
 
 [alias]
   s   = status
@@ -44,6 +45,10 @@
 	# http://d.hatena.ne.jp/kanonji/20110222/1298341934
 	mkpatch = diff --no-prefix
 
+	# 現在のブランチ名をクリップボードにコピーする
+	# copy current branch
+	ccb = "!f() { echo `git symbolic-ref --short HEAD` | tr -d '\n' ``| pbcopy; pbpaste ; echo '';}; f"
+
   so  = remote show origin
   # pull/push/fetch
   ft  = fetch
@@ -54,6 +59,7 @@
   pu  = push -u origin      # push origin and set upstream
   # push current branch to origin with --upstream
   puc = "!f() { git push origin -u `git symbolic-ref --short HEAD` ;}; f"
+
   # rebase
   rbm = rebase --merge master       # masterへのrebaseはよく使うのでalias
   rbd = rebase --merge develop
