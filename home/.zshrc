@@ -4,11 +4,15 @@ source ~/.zsh.d/conf/.zshrc_zsh
 
 source ~/.zshrc_local
 
-fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+if [ `uname` = "Darwin" ]; then
+	source ~/.zsh.d/conf/.zshrc_mac
+elif [ `uname` = "Linux" ]; then
+	~/.zsh.d/conf/.zshrc_linux
+fi
+
 
 autoload -U compinit
 compinit -u
-
 
 
 source ~/.zsh.d/conf/.zshrc_git
