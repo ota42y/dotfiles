@@ -11,3 +11,6 @@ alias ta='tig --all'
 
 alias be='bundle exec'
 alias ber='be ruby'
+
+alias e='emacsclient -n'
+export EDITOR=e
