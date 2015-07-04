@@ -1,0 +1,5 @@
+(:name markdown-mode
+	   :type git
+	   :website "http://jblevins.org/projects/markdown-mode/"
+       :branch "master"
+       :url "git://jblevins.org/git/markdown-mode.git")

@@ -38,6 +38,7 @@
     init-loader
     org-toodledo
     twittering-mode
+	markdown-mode
     )
   "A list of packages to install from el-get at launch.")
 
