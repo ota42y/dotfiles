@@ -9,3 +9,5 @@ home/.emacs.d/url
 init-loader.el
 **/.bundle
 **/vender/bundle
+
+home/.tmux/plugins

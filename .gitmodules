@@ -1,3 +1,6 @@
 [submodule "home/.zsh.d/zsh-bundle-exec"]
 	path = home/.zsh.d/zsh-bundle-exec
 	url = git@github.com:rhysd/zsh-bundle-exec.git
+[submodule "home/.tmux/plugins/tpm"]
+	path = home/.tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git
