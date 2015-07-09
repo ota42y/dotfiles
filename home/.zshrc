@@ -3,6 +3,13 @@ source ~/.zsh.d/conf/.zshrc_alias
 source ~/.zsh.d/conf/.zshrc_zsh
 source ~/.zsh.d/conf/.zshrc_tmux
 
+
+# cdr, add-zsh-hook を有効にする
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+
+source ~/.zsh.d/conf/.zshrc_peco
+
 source ~/.zshrc_local
 
 if [ `uname` = "Darwin" ]; then
