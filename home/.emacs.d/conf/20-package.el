@@ -6,8 +6,7 @@
 	open-junk-file
 	http-post-simple
 	org
-  org-plus-contrib
-	jabber
+	org-plus-contrib
 	))
 
 
