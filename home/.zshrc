@@ -2,6 +2,7 @@ source ~/.zsh.d/conf/.zshrc_path
 source ~/.zsh.d/conf/.zshrc_alias
 source ~/.zsh.d/conf/.zshrc_zsh
 source ~/.zsh.d/conf/.zshrc_tmux
+source ~/.zsh.d/conf/.zshrc_plugins
 
 
 # cdr, add-zsh-hook を有効にする

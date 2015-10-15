@@ -4,3 +4,6 @@
 [submodule "home/.tmux/plugins/tpm"]
 	path = home/.tmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git
+[submodule "home/.zsh.d/cd-bookmark"]
+	path = home/.zsh.d/cd-bookmark
+	url = git@github.com:mollifier/cd-bookmark.git
