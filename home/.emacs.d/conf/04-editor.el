@@ -6,13 +6,9 @@
 
 ;; タブキー
 ;; タブ幅を４に設定
-(setq-default tab-width 4)
-
-;; タブ幅の倍数を設定
-(setq tab-stop-list
-  '(2 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
-;(setq default-tab-width 2)
-;(setq indent-line-function 'indent-relative-maybe)
+(setq-default c-basic-offset 4     ;;基本インデント量4
+              tab-width 4          ;;タブ幅4
+              indent-tabs-mode nil)  ;;インデントをタブでするかスペースでするか
 
 ; 対応括弧をハイライト表示
 (show-paren-mode t)
