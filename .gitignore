@@ -11,3 +11,4 @@ init-loader.el
 **/vender/bundle
 
 home/.tmux/plugins
+home/.tmux/resurrect
