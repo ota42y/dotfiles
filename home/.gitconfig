@@ -35,6 +35,8 @@
   ss  = status -s
   sh  = show
 
+  pr  = pull-request
+
 	n  = now --all --stat
 
 	# Git でマージ済みのブランチを一括削除する
