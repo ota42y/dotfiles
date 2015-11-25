@@ -3,4 +3,5 @@
 **/.idea
 *.iml
 
-home/.emacs.d/.org-id-locations 
+home/.emacs.d/.org-id-locations
+home/.emacs.d/recentf
