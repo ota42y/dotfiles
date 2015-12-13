@@ -1,2 +1,7 @@
+# http://mawatari.jp/archives/mac-provisioning-by-homebrew-and-ansible
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+
 
