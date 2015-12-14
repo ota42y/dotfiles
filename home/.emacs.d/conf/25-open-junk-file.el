@@ -2,7 +2,7 @@
 ;; 読み込み
 (require 'open-junk-file)
 ;; ファイル名およびファイル場所の指定
-(setq open-junk-file-format "~/aa_files/Dropbox/archive/mobile/text/junk/%Y%m/%Y-%m-%d memo.md")
+(setq open-junk-file-format "~/aa_files/Dropbox/archive/mobile/text/junk/%Y%m/")
 
 (global-set-key (kbd "C-,") 'open-junk-file)
 ; ターミナルだとC-,が遅れないのでF11に割り当てる
