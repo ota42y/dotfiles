@@ -35,6 +35,6 @@ export PATH=$PATH:/usr/local/mysql/bin
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # git contrib
-export PATH=/usr/local/share/git-core/contrib/:$PATH
+export PATH=/usr/local/share/git-core/contrib:$PATH
 # git-new-workdir
-export PATH=/usr/local/share/git-core/contrib/workdir/:$PATH
+export PATH=/usr/local/share/git-core/contrib/workdir:$PATH
