@@ -19,7 +19,7 @@ then
 fi
 
 # go-lang
-export GOPATH=$HOME/.gocode
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # nodebrew
