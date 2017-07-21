@@ -1,21 +1,13 @@
-= " qfixappにruntimepathを通す(パスは環境に合わせてください)
-[2013-12-02 23:18]
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
-set runtimepath+=~/.vim/qfixapp
-
+set runtimepath+=$HOWM_LIB_PATH
 
 " " キーマップリーダー
 let QFixHowm_Key = 'l'
 "
 " " howm_dirはファイルを保存したいディレクトリを設定
+let howm_dir=$HOWM_DIR
 
-if has('win32') || has('win64')
-  let howm_dir           = 'E:/Dropbox/Data/text/howm'
-else
-  let howm_dir           = '~/a_files/dropbox/Data/text/howm'
-endif
-
-let howm_filename        = '%Y/%m/%Y-%m-%d.txt'
+let howm_filename        = '%Y/%m/%Y-%m-%d-%H%M%S.md'
 let howm_fileencoding    = 'utf-8'
 let howm_fileformat      = 'unix'
 
@@ -23,11 +15,18 @@ let QFixHowm_Wiki = 1
 let QFixHowm_MenuKey = 0
 
 " クイックメモの追加
-let QFixHowm_QuickMemoFile = "quick_memo_0.txt"
-let QFixHowm_QuickMemoFile1 = "quick_memo_1.txt"
-let QFixHowm_QuickMemoFile2 = "quick_memo_2.txt"
-let QFixHowm_QuickMemoFile3 = "quick_memo_3.txt"
-let QFixHowm_QuickMemoFile4 = "quick_memo_4.txt"
+let QFixHowm_QuickMemoFile = "quick_memo_0.md"
+let QFixHowm_QuickMemoFile1 = "quick_memo_1.md"
+let QFixHowm_QuickMemoFile2 = "quick_memo_2.md"
+let QFixHowm_QuickMemoFile3 = "quick_memo_3.md"
+let QFixHowm_QuickMemoFile4 = "quick_memo_4.md"
+
+let QFixHowm_FileType = 'markdown'
 
 let QFixHowm_MenuRecent = 25
 
+" タイトル記号を # に変更する
+let QFixHowm_Title = '#'
+
+" メニュー画面にカレンダーも表示する
+let QFixHowm_MenuCalendar = 0
