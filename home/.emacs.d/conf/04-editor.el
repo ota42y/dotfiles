@@ -39,8 +39,8 @@
 (setq hl-line-face 'underline)
 
 ; 半透明化
-(modify-all-frames-parameters
- (list (cons 'alpha  '(80 60 50 60)))) ; 前から順に通常のフレーム，アクティブ でないフレーム，移動中のフレーム，サイズ変更中のフレームの透明度
+;(modify-all-frames-parameters
+; (list (cons 'alpha  '(80 60 50 60)))) ; 前から順に通常のフレーム，アクティブ でないフレーム，移動中のフレーム，サイズ変更中のフレームの透明度
 
 ; ツールバーを非表示
 (tool-bar-mode -1) ; M-x tool-bar-mode で表示非表示を切り替えられる
