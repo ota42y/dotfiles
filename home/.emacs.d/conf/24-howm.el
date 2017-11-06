@@ -1,4 +1,4 @@
-(defvar datetime-format "%Y-%m-%dT%H:%M:%S")
+(defvar datetime-format "%Y-%m-%d %H:%M")
 ;; 言語
 (setq howm-menu-lang 'ja)
 ;; ファイルパス
