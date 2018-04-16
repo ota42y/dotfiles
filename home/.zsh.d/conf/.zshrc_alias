@@ -14,3 +14,5 @@ alias ber='be ruby'
 
 alias e='emacsclient -n'
 export EDITOR=emacsclient
+
+alias berubocopall='bundle exec rubocop $( git diff --name-only --diff-filter=AMRC HEAD~1 | grep -e ".*\.rb" | paste -s - )'
