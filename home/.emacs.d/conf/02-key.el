@@ -4,3 +4,6 @@
 (global-set-key (kbd "C-z") ctl-x-map)
 
 (global-set-key "\C-xm" 'set-mark-command) ; emacsでメール書かないだろうし
+
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'super)
