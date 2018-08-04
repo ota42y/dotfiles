@@ -1,2 +1,2 @@
 # macvim not load .zshrc...
-source .zshrc
+source ~/.zshrc
