@@ -5,7 +5,7 @@
 	path = ~/.gitconfig.local
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = $HOME/.gitignore
     editor = vim
 
 [color]
