@@ -27,3 +27,7 @@ source ~/.zsh.d/conf/.zshrc_git
 
 # http://qiita.com/Linda_pp/items/cb047fb1fe279f9d0b22
 source ~/.zsh.d/zsh-bundle-exec/zsh-bundle-exec.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
