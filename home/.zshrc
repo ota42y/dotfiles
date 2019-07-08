@@ -21,7 +21,5 @@ elif [ `uname` = "Linux" ]; then
 	~/.zsh.d/conf/.zshrc_linux
 fi
 
-
 autoload -U compinit
 compinit -u
-
