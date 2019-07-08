@@ -1,4 +1,5 @@
 alias rm='rm -i'
+alias k='kubectl'
 
 alias g='git'
 alias gci='g ci'
