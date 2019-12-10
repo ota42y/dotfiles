@@ -1,4 +1,5 @@
 source ~/.zsh.d/lazyenv.bash
+source ~/.zshrc_local
 source ~/.zsh.d/conf/.zshrc_path
 source ~/.zsh.d/conf/.zshrc_alias
 source ~/.zsh.d/conf/.zshrc_zsh
@@ -13,7 +14,6 @@ add-zsh-hook chpwd chpwd_recent_dirs
 
 source ~/.zsh.d/conf/.zshrc_peco
 
-source ~/.zshrc_local
 
 if [ `uname` = "Darwin" ]; then
 	source ~/.zsh.d/conf/.zshrc_mac
