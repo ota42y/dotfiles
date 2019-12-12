@@ -16,3 +16,6 @@ alias ber='be ruby'
 alias e='emacsclient -n'
 
 alias berubocopall='bundle exec rubocop $( git diff --name-only --diff-filter=AMRC HEAD~1 | grep -e ".*\.rb" | paste -s - )'
+
+alias gcd='cd $(ghq root)/$(ghq list | peco)'
+alias gb='open https://$(ghq list | peco | cut -d "/" -f 1-3)'
