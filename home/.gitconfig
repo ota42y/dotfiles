@@ -191,9 +191,6 @@
 
   fizzbuzz = "!f() { seq "$@" | awk '$0=NR%15?NR%5?NR%3?$0:\"Fizz\":\"Buzz\":\"FizzBuzz\"' ;}; f"
 
-[credential]
-	helper = osxkeychain
-
 [help]
 	autocorrect = -1
 
