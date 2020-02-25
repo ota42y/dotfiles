@@ -18,7 +18,7 @@ source ~/.zsh.d/conf/.zshrc_peco
 if [ `uname` = "Darwin" ]; then
 	source ~/.zsh.d/conf/.zshrc_mac
 elif [ `uname` = "Linux" ]; then
-	~/.zsh.d/conf/.zshrc_linux
+	source ~/.zsh.d/conf/.zshrc_linux
 fi
 
 autoload -U compinit

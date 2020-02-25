@@ -35,4 +35,6 @@ export PATH="/usr/local/sbin:$PATH"
 # flutter
 export PATH=$HOME/bin/flutter/bin:$PATH
 
+# nodeenv
+export PATH=$HOME/.nodenv/bin:"$PATH"
 eval "$(nodenv init -)"
