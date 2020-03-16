@@ -1,3 +1,16 @@
 # nothing
 export PATH=/usr/local/go/bin/:"$PATH"
 export PATH="$PATH":~/linux_bin
+export PATH="$PATH":~/.local/bin
+
+# tail -r support BSD only
+function peco-history-selection() {
+    BUFFER=`history -n 1 | tac -r  | awk '!a[$0]++' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
+
+export BROWSER=none

@@ -23,3 +23,4 @@ fi
 
 autoload -U compinit
 compinit -u
+

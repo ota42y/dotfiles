@@ -4,4 +4,12 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 
+# tail -r support BSD only
+function peco-history-selection() {
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
 
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
