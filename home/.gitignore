@@ -2,6 +2,7 @@
 **/.DS_Store
 **/.idea
 *.iml
+.vscode
 
 home/.emacs.d/.org-id-locations
 home/.emacs.d/recentf
