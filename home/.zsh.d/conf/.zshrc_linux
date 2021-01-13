@@ -17,3 +17,4 @@ export BROWSER=none
 
 # https://mobile.twitter.com/kymn_/status/1340670827218407425
 alias open='powershell.exe /c start'
+alias bp="powershell.exe '[console]::beep(1000,200)'"
