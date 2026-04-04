@@ -1,4 +1,7 @@
-source ~/.zsh.d/lazyenv.bash
+#source ~/.zsh.d/lazyenv.bash
+
+export PATH=$HOME/.local/bin/:$PATH
+
 source ~/.zshrc_local
 source ~/.zsh.d/conf/.zshrc_path
 source ~/.zsh.d/conf/.zshrc_alias
@@ -23,3 +26,9 @@ fi
 
 autoload -U compinit
 compinit -u
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ota42y/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ota42y/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ota42y/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ota42y/google-cloud-sdk/completion.zsh.inc'; fi

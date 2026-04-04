@@ -10,12 +10,20 @@ alias gftp='g ftp'
 alias t='tig'
 alias ta='tig --all'
 
-alias be='bundle exec'
-alias ber='be ruby'
-
-alias e='emacsclient -n'
-
-alias berubocopall='bundle exec rubocop $( git diff --name-only --diff-filter=AMRC HEAD~1 | grep -e ".*\.rb" | paste -s - )'
-
 alias gcd='cd $(ghq root)/$(ghq list | peco)'
 alias gb='open https://$(ghq list | peco | cut -d "/" -f 1-3)'
+
+vscode_remote() {
+  local socket rc_code
+  socket="$(ls -1t /run/user/$UID/vscode-ipc-*.sock 2>/dev/null | head -n1 || true)"
+
+  stable_dir="$(ls -1dt /home/ota42y/.vscode-server/cli/servers/Stable* 2>/dev/null \
+  | grep -v '\.staging$' \
+  | head -n1 || true)"
+
+  rc_code="${stable_dir}/server/bin/remote-cli/code"
+
+  VSCODE_IPC_HOOK_CLI="$socket" "$rc_code" "$@"
+}
+
+alias co=vscode_remote
