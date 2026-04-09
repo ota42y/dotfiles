@@ -157,17 +157,19 @@ fi
 function _update_vcs_info_msg() {
     local branch_prompt
     local action_prompt
-    local branch_color=blue
+    local branch_color=green
+    local git_status_output
     local -a git_status_lines
     local line
 
     LANG=en_US.UTF-8 vcs_info
 
     if [[ -n ${vcs_info_msg_0_} ]]; then
-        git_status_lines=("${(@f)$(command git status --porcelain 2> /dev/null)}")
+        git_status_output=$(command git status --porcelain 2> /dev/null)
 
-        if (( ${#git_status_lines[@]} > 0 )); then
-            branch_color=green
+        if [[ -n ${git_status_output} ]]; then
+            git_status_lines=("${(@f)git_status_output}")
+            branch_color=blue
             for line in "${git_status_lines[@]}"; do
                 if [[ ${line} != '?? '* ]]; then
                     branch_color=red
